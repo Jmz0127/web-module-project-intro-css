@@ -1,71 +1,47 @@
 /* CSS reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend {
-	vertical-align: baseline;
-	font-family: inherit;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	outline: 0;
-	padding: 0;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
-	/* border: 0; */
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 /* remember to define focus styles! */
 :focus {
@@ -98,6 +74,8 @@ h1 {
 
 section {
 	padding: 4% 0;
+	width: 90%;
+	margin: 0 auto;
 }
 
 a {
@@ -133,27 +111,26 @@ nav a {
 	margin-right: 10%;
 }
 
-/*top section styles*/
+/*title styles*/
 .top {
 	position: relative;
 }
-.left,
-.right {
+.left, .right {
 	display: inline-block;
-	text-align: center;
 }
 .left {
 	width: 30%;
 }
 .left img {
 	border-radius: 50%;
-	width: 80%;
 }
 .right {
 	width: 55%;
 	margin-left: 5%;
+	text-align: center;
+	line-height: 3;
 	position: absolute;
-	top: 45%;
+	top: 150px;
 }
 
 .text{
@@ -161,31 +138,39 @@ nav a {
 	margin 0 auto;
 }
 
-/* main mid section style */
-
-.fire-pic{
-	text-align: center;
+/* main section style */
+.main{
+	background-color:#DDB9A3;
+	color: #fff;
+	padding: 2%;
 }
 
-.fire p{
-	width: 15%;
-	margin-left: auto;
-	margin-right: auto;
+
+/* info section style */
+
+.info div{ 
+	width:30%;
+	margin:5% auto;
 }
 
-.reservation-pic{
-	text-align: center;
-	padding: 50%
+.bold {
+	font-weight:bold;
 }
 
-.reservation p{
-	width: 17%;
-	margin-left: auto;
-	margin-right: auto;
+.bg-img{
+	background-image: url('assets/footer_img.jpg');
+	height:50vh;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: top center;
+	width: 100%
 }
+
+
 /* footer section style */
 nav {
 	padding: 2% 0;
+	background-color: #F9E7DC;
 }
 nav a {
 	display: inline-block;
