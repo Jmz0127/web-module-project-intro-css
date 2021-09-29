@@ -161,6 +161,28 @@ nav a {
 	margin 0 auto;
 }
 
+/* main mid section style */
+
+.fire-pic{
+	text-align: center;
+}
+
+.fire p{
+	width: 15%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reservation-pic{
+	text-align: center;
+	padding: 50%
+}
+
+.reservation p{
+	width: 17%;
+	margin-left: auto;
+	margin-right: auto;
+}
 /* footer section style */
 nav {
 	padding: 2% 0;
